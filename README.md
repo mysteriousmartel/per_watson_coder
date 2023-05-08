@@ -31,4 +31,6 @@ The scripts are designed to train and utilize a Watson model to return confidenc
 ]
 ```
 
+We recommend that you create your own Python script to convert your data to this format depending on your situation. 
+
 Once the training data is prepared, run "trainer.py" to send the training data off for preparing the model. 
