@@ -37,4 +37,4 @@ Once the training data is prepared, run "trainer.py" to send the training data o
 
 When the script is run it will return a line containing the *model_id*. Please copy this model_id to insert in the testing.py script. If you forget, a .txt file with the model_id will be saved to the file path of the trainer script. 
 
-Training time will vary, and IBM does not have an indicator when training is complete. Our training required ~10min for 40 samples up to ~1hr for 1000 samples. 
+Training time will vary, and IBM does not have an indicator when training is complete. Our training required ~10min for 40 samples up to ~1hr for 1000 samples. You can use the finder.py script to check the status of your model. The line "status:" will indicate "training" or "available" depending on completion of training.
