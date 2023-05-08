@@ -35,4 +35,6 @@ We recommend that you create your own Python script to convert your data to this
 
 Once the training data is prepared, run "trainer.py" to send the training data off for preparing the model. Your API key and URL will need to be pasted into lines 28-29 before running the script. Line 35 requires the name of the .json file containing the training data.
 
+When the script is run it will return a line containing the *model_id*. Please copy this model_id to insert in the testing.py script. If you forget, a .txt file with the model_id will be saved to the file path of the trainer script. 
+
 Training time will vary, and IBM does not have an indicator when training is complete. Our training required ~10min for 40 samples up to ~1hr for 1000 samples. 
