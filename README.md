@@ -12,7 +12,7 @@ To promote further investigation on use of NLPs in grading and data analysis in 
 
 - Python 3.0 or higher
 - An account with [IBM Cloud](https://cloud.ibm.com/registration)
-- An API key ([How to make an API key](https://cloud.ibm.com/docs/natural-language-understanding?topic=natural-language-understanding-getting-started))
+- An API key and URL ([How to make an API key](https://cloud.ibm.com/docs/natural-language-understanding?topic=natural-language-understanding-getting-started))
 
 ## Instructions for using the scipts
 
@@ -31,6 +31,8 @@ The scripts are designed to train and utilize a Watson model to return confidenc
 ]
 ```
 
-We recommend that you create your own Python script to convert your data to this format depending on your situation. 
+We recommend that you create your own Python script to convert your data to this labeling format depending on your situation.
 
-Once the training data is prepared, run "trainer.py" to send the training data off for preparing the model. 
+Once the training data is prepared, run "trainer.py" to send the training data off for preparing the model. Your API key and URL will need to be pasted into lines 28-29 before running the script. Line 35 requires the name of the .json file containing the training data.
+
+Training time will vary, and IBM does not have an indicator when training is complete. Our training required ~10min for 40 samples up to ~1hr for 1000 samples. 
