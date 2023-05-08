@@ -57,4 +57,5 @@ else:
     response_json = response.json()
     model_id = response_json['model_id']
     print('Custom Model ID: ', model_id)
-    
+    with open('model_id.txt', 'w') as f:
+        f.write(model_id)
