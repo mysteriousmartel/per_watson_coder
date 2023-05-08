@@ -3,10 +3,8 @@ import json
 
 data = []
 
-student_id = 0
-code = 12
-comments = 13
-statement = 14
+statement = 0
+category = 1
 
 def store_file_data(path): # Opens the CSV Data and Stores the Returns the Data as a List
 	with open(path) as file:
@@ -18,7 +16,7 @@ def parse_file(stop):
 	for row in r_list:
 		word = "".join(row[code].split()).lower()
 
-		if word == "average" or word == "percenterror" or word == "qualset" or word == "uncertainty":
+		if word == "LABEL1" or word == "LABEL2":
 			append_data(row[statement], word, int(row[student_id]))
 		elif word == "dual":
 			dual_word = "".join(row[comments].split()).lower()
