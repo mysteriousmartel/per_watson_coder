@@ -10,9 +10,9 @@ To promote further investigation on use of NLPs in grading and data analysis in 
 
 ## Requirements
 
--Python 3.0 or higher
--An account with [IBM Cloud](https://cloud.ibm.com/registration)
--
+Python 3.0 or higher
+An account with [IBM Cloud](https://cloud.ibm.com/registration)
+
 
 The scripts are designed to train and utilize a Watson model to return confidence scores for N number of categories correlated to training data labels. Training data must be converted to a .json format, following the guideline provided by [IBM](https://cloud.ibm.com/docs/natural-language-understanding?topic=natural-language-understanding-classifications):
 
