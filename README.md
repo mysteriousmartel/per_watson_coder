@@ -14,6 +14,7 @@ To promote further investigation on use of NLPs in grading and data analysis in 
 - An account with [IBM Cloud](https://cloud.ibm.com/registration)
 - An API key ([How to make an API key](https://cloud.ibm.com/docs/natural-language-understanding?topic=natural-language-understanding-getting-started))
 
+## Instructions for using the scipts
 
 The scripts are designed to train and utilize a Watson model to return confidence scores for N number of categories correlated to training data labels. Training data must be converted to a .json format, following the guideline provided by [IBM](https://cloud.ibm.com/docs/natural-language-understanding?topic=natural-language-understanding-classifications):
 
