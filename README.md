@@ -37,4 +37,8 @@ Once the training data is prepared, run "trainer.py" to send the training data o
 
 When the script is run it will return a line containing the *model_id*. Please copy this model_id to insert in the testing.py script. If you forget, a .txt file with the model_id will be saved to the file path of the trainer script. 
 
-Training time will vary, and IBM does not have an indicator when training is complete. Our training required ~10min for 40 samples up to ~1hr for 1000 samples. You can use the finder.py script to check the status of your model. The line "status:" will indicate "training" or "available" depending on completion of training.
+Training time will vary, and IBM does not have an immediate indicator when training is complete. Our training required ~10min for 40 samples up to ~1hr for 1000 samples. You can use the finder.py script to check the status of your model. The line "status:" will include "training" or "available" depending on completion of training.
+
+When training is complete, "tester.py" can be used to obtain confidence scores from Watson on any remaining statements. The script is arranged to accept a .csv file with one column containing all statements in individual rows. Each statement will be sent to Watson for processing. The script will return a file a full compilation of statements, scores per label, and the label with the highest confidence. In its current state, the script is written for 2 labels. More labels can be added using the commented script in lines 76-80.
+
+If new training data needs to be implemented, the free version of IBM Cloud only permits one model per account. The script "deleter.py" can be used to erase the current model to make space for a new one. You will need to keep the model_id in order to delete the model.
