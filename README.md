@@ -1,6 +1,6 @@
 # Guide on how to use the Watson trainer and analyzer
 
-(Updated 05/08/2023)
+(Updated 05/12/2023)
 
 ## Background
 
@@ -42,3 +42,11 @@ Training time will vary, and IBM does not have an immediate indicator when train
 When training is complete, "tester.py" can be used to obtain confidence scores from Watson on any remaining statements. The script is arranged to accept a .csv file with one column containing all statements in individual rows. Each statement will be sent to Watson for processing. The script will return a file a full compilation of statements, scores per label, and the label with the highest confidence. In its current state, the script is written for 2 labels. More labels can be added using the commented script in lines 76-80.
 
 If new training data needs to be implemented, the free version of IBM Cloud only permits one model per account. The script "deleter.py" can be used to erase the current model to make space for a new one. You will need to keep the model_id in order to delete the model.
+
+## Contact info
+
+If you have questions or concerns using this script, or if you would like to know more about this work and other projects in the University of Illinois' PER group, our contact information is below.
+
+Jennifer Campbell - jjc11@illinois.edu
+Katie Ansell - crimmin1@illinois.edu
+Tim Stelzer - tstelzer@iilinois.edu
