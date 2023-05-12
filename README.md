@@ -47,6 +47,6 @@ If new training data needs to be implemented, the free version of IBM Cloud only
 
 If you have questions or concerns using this script, or if you would like to know more about this work and other projects in the University of Illinois' PER group, our contact information is below.
 
-Jennifer Campbell - jjc11@illinois.edu
-Katie Ansell - crimmin1@illinois.edu
+Jennifer Campbell - jjc11@illinois.edu <br>
+Katie Ansell - crimmin1@illinois.edu <br>
 Tim Stelzer - tstelzer@iilinois.edu
