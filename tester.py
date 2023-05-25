@@ -105,6 +105,6 @@ def save_data(file): # Saving the data to a csv
         for i in range(len(student_ids)):
             writer.writerow([statements[i], label1[i], label2[i], machine_code[i]])
 
-r_list = store_file_data('a.csv')
+r_list = store_file_data('a.csv') #Change this to the name of the file with the data you would like to analyze
 parse_file(stopping_point)
 save_data('watson_results.csv')
